@@ -1,0 +1,208 @@
+Collecting transformers==4.40.1
+  Using cached transformers-4.40.1-py3-none-any.whl.metadata (137 kB)
+Collecting tokenizers
+  Using cached tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting streamlit==1.33.0
+  Using cached streamlit-1.33.0-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting plotly==5.21.0
+  Using cached plotly-5.21.0-py3-none-any.whl.metadata (7.1 kB)
+Collecting pandas
+  Using cached pandas-3.0.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting numpy
+  Using cached numpy-2.4.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting codecarbon==2.4.1
+  Using cached codecarbon-2.4.1-py3-none-any.whl.metadata (6.8 kB)
+Requirement already satisfied: filelock in ./venv/lib/python3.13/site-packages (from transformers==4.40.1) (3.20.0)
+Collecting huggingface-hub<1.0,>=0.19.3 (from transformers==4.40.1)
+  Using cached huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+Collecting packaging>=20.0 (from transformers==4.40.1)
+  Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pyyaml>=5.1 (from transformers==4.40.1)
+  Using cached pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting regex!=2019.12.17 (from transformers==4.40.1)
+  Using cached regex-2026.2.28-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting requests (from transformers==4.40.1)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting tokenizers
+  Using cached tokenizers-0.19.1.tar.gz (321 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting safetensors>=0.4.1 (from transformers==4.40.1)
+  Using cached safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting tqdm>=4.27 (from transformers==4.40.1)
+  Using cached tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+Collecting altair<6,>=4.0 (from streamlit==1.33.0)
+  Using cached altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+Collecting blinker<2,>=1.0.0 (from streamlit==1.33.0)
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting cachetools<6,>=4.0 (from streamlit==1.33.0)
+  Using cached cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting click<9,>=7.0 (from streamlit==1.33.0)
+  Using cached click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting numpy
+  Using cached numpy-1.26.4.tar.gz (15.8 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting packaging>=20.0 (from transformers==4.40.1)
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pandas
+  Using cached pandas-2.3.3-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting pillow<11,>=7.1.0 (from streamlit==1.33.0)
+  Using cached pillow-10.4.0-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (9.2 kB)
+Collecting protobuf<5,>=3.20 (from streamlit==1.33.0)
+  Using cached protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting pyarrow>=7.0 (from streamlit==1.33.0)
+  Using cached pyarrow-23.0.1-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (3.1 kB)
+Collecting rich<14,>=10.14.0 (from streamlit==1.33.0)
+  Using cached rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting tenacity<9,>=8.1.0 (from streamlit==1.33.0)
+  Using cached tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting toml<2,>=0.10.1 (from streamlit==1.33.0)
+  Using cached toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: typing-extensions<5,>=4.3.0 in ./venv/lib/python3.13/site-packages (from streamlit==1.33.0) (4.15.0)
+Collecting gitpython!=3.1.19,<4,>=3.0.7 (from streamlit==1.33.0)
+  Using cached gitpython-3.1.46-py3-none-any.whl.metadata (13 kB)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit==1.33.0)
+  Using cached pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)
+Collecting tornado<7,>=6.0.3 (from streamlit==1.33.0)
+  Using cached tornado-6.5.5-cp39-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (2.8 kB)
+Collecting watchdog>=2.1.5 (from streamlit==1.33.0)
+  Using cached watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+Collecting arrow (from codecarbon==2.4.1)
+  Using cached arrow-1.4.0-py3-none-any.whl.metadata (7.7 kB)
+Collecting prometheus-client (from codecarbon==2.4.1)
+  Using cached prometheus_client-0.24.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting psutil (from codecarbon==2.4.1)
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting py-cpuinfo (from codecarbon==2.4.1)
+  Using cached py_cpuinfo-9.0.0-py3-none-any.whl.metadata (794 bytes)
+Collecting pynvml (from codecarbon==2.4.1)
+  Using cached pynvml-13.0.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting rapidfuzz (from codecarbon==2.4.1)
+  Using cached rapidfuzz-3.14.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (12 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Using cached pytz-2026.1.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Using cached tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: jinja2 in ./venv/lib/python3.13/site-packages (from altair<6,>=4.0->streamlit==1.33.0) (3.1.6)
+Collecting jsonschema>=3.0 (from altair<6,>=4.0->streamlit==1.33.0)
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting narwhals>=1.14.2 (from altair<6,>=4.0->streamlit==1.33.0)
+  Using cached narwhals-2.18.0-py3-none-any.whl.metadata (14 kB)
+Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.19,<4,>=3.0.7->streamlit==1.33.0)
+  Using cached gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit==1.33.0)
+  Using cached smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: fsspec>=2023.5.0 in ./venv/lib/python3.13/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers==4.40.1) (2025.12.0)
+Collecting hf-xet<2.0.0,>=1.1.3 (from huggingface-hub<1.0,>=0.19.3->transformers==4.40.1)
+  Using cached hf_xet-1.4.2-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests->transformers==4.40.1)
+  Using cached charset_normalizer-3.4.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (39 kB)
+Collecting idna<4,>=2.5 (from requests->transformers==4.40.1)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->transformers==4.40.1)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests->transformers==4.40.1)
+  Using cached certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich<14,>=10.14.0->streamlit==1.33.0)
+  Using cached markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich<14,>=10.14.0->streamlit==1.33.0)
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv/lib/python3.13/site-packages (from jinja2->altair<6,>=4.0->streamlit==1.33.0) (3.0.2)
+Collecting attrs>=22.2.0 (from jsonschema>=3.0->altair<6,>=4.0->streamlit==1.33.0)
+  Using cached attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair<6,>=4.0->streamlit==1.33.0)
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair<6,>=4.0->streamlit==1.33.0)
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=3.0->altair<6,>=4.0->streamlit==1.33.0)
+  Using cached rpds_py-0.30.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<14,>=10.14.0->streamlit==1.33.0)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting nvidia-ml-py>=12.0.0 (from pynvml->codecarbon==2.4.1)
+  Using cached nvidia_ml_py-13.590.48-py3-none-any.whl.metadata (9.8 kB)
+Using cached transformers-4.40.1-py3-none-any.whl (9.0 MB)
+Using cached streamlit-1.33.0-py2.py3-none-any.whl (8.1 MB)
+Using cached plotly-5.21.0-py3-none-any.whl (15.7 MB)
+Using cached codecarbon-2.4.1-py3-none-any.whl (491 kB)
+Using cached pandas-2.3.3-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.3 MB)
+Using cached altair-5.5.0-py3-none-any.whl (731 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached cachetools-5.5.2-py3-none-any.whl (10 kB)
+Using cached click-8.3.1-py3-none-any.whl (108 kB)
+Using cached gitpython-3.1.46-py3-none-any.whl (208 kB)
+Using cached gitdb-4.0.12-py3-none-any.whl (62 kB)
+Using cached huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+Using cached hf_xet-1.4.2-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Using cached pillow-10.4.0-cp313-cp313-manylinux_2_28_x86_64.whl (4.5 MB)
+Using cached protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+Using cached pydeck-0.9.1-py2.py3-none-any.whl (6.9 MB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Using cached charset_normalizer-3.4.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (195 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Using cached smmap-5.0.3-py3-none-any.whl (24 kB)
+Using cached tenacity-8.5.0-py3-none-any.whl (28 kB)
+Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Using cached tornado-6.5.5-cp39-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (447 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Using cached certifi-2026.2.25-py3-none-any.whl (153 kB)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached attrs-25.4.0-py3-none-any.whl (67 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached narwhals-2.18.0-py3-none-any.whl (444 kB)
+Using cached pyarrow-23.0.1-cp313-cp313-manylinux_2_28_x86_64.whl (47.6 MB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2026.1.post1-py2.py3-none-any.whl (510 kB)
+Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.6/801.6 kB 2.2 MB/s  0:00:00
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached regex-2026.2.28-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (802 kB)
+Using cached rpds_py-0.30.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (394 kB)
+Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (507 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached tqdm-4.67.3-py3-none-any.whl (78 kB)
+Using cached tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+Using cached watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+Downloading arrow-1.4.0-py3-none-any.whl (68 kB)
+Downloading prometheus_client-0.24.1-py3-none-any.whl (64 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+Downloading pynvml-13.0.1-py3-none-any.whl (28 kB)
+Downloading nvidia_ml_py-13.590.48-py3-none-any.whl (50 kB)
+Downloading rapidfuzz-3.14.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 2.2 MB/s  0:00:01
+Building wheels for collected packages: tokenizers, numpy
+  Building wheel for tokenizers (pyproject.toml): started
+  Building wheel for tokenizers (pyproject.toml): finished with status 'error'
+  Building wheel for numpy (pyproject.toml): started
+  Building wheel for numpy (pyproject.toml): finished with status 'done'
+  Created wheel for numpy: filename=numpy-1.26.4-cp313-cp313-linux_x86_64.whl size=9070181 sha256=8c70003eaeb96076dcd75cd8c4c9f72ec8e5a0441bc6ea1c6310b42527cbc572
+  Stored in directory: /home/cat/.cache/pip/wheels/8b/2d/9f/b6b46373f328e2ef50388915d351ccacbedac929459b5459bf
+Successfully built numpy
+Failed to build tokenizers
