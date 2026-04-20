@@ -84,6 +84,12 @@ def run_inference(model_name: str, text: str) -> dict:
         "NEG": "NEGATIVE",
         "NEU": "NEUTRAL",
         "POS": "POSITIVE",
+        # Handle star ratings (nlptown/bert-base-multilingual-uncased-sentiment)
+        "1 STAR": "NEGATIVE",
+        "2 STARS": "NEGATIVE",
+        "3 STARS": "NEUTRAL",
+        "4 STARS": "POSITIVE",
+        "5 STARS": "POSITIVE",
     }
     
     label = label_mapping.get(label, label)

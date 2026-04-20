@@ -10,12 +10,12 @@ LARGE_MODEL_NAME = "nlptown/bert-base-multilingual-uncased-sentiment"
 
 # ── Inference thresholds ───────────────────────────────────────────────────────
 RULE_ENGINE_THRESHOLD  = 1.0   # Rule engine always returns 1.0 when it fires
-SMALL_MODEL_THRESHOLD  = 0.80  # DistilBERT must reach this to skip BERT
+SMALL_MODEL_THRESHOLD  = 0.80  # RoBERTa must reach this to skip BERT
 LARGE_MODEL_THRESHOLD  = 0.50  # BERT fallback — always accepted
 
 # ── Approximate energy costs (kWh per inference) — empirical estimates ─────────
 ENERGY_RULE_ENGINE   = 0.000001   # Essentially zero — pure Python logic
-ENERGY_SMALL_MODEL   = 0.000120   # DistilBERT on CPU
+ENERGY_SMALL_MODEL   = 0.000120   # RoBERTa on CPU
 ENERGY_LARGE_MODEL   = 0.000320   # BERT-base on CPU
 
 # ── CO₂ intensity (kg CO₂ per kWh) — global average grid ──────────────────────

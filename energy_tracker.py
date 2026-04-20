@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 # ── Per-stage energy lookup ────────────────────────────────────────────────────
 _STAGE_ENERGY: dict[str, float] = {
     "Rule Engine":  ENERGY_RULE_ENGINE,
-    "DistilBERT":   ENERGY_SMALL_MODEL,
+    "RoBERTa":      ENERGY_SMALL_MODEL,
     "BERT":         ENERGY_LARGE_MODEL,
 }
 
@@ -57,7 +57,7 @@ def estimate_energy(stage: str) -> dict:
     Parameters
     ----------
     stage : str
-        One of ``"Rule Engine"``, ``"DistilBERT"``, ``"BERT"``.
+        One of ``"Rule Engine"``, ``"RoBERTa"``, ``"BERT"``.
 
     Returns
     -------
@@ -113,7 +113,6 @@ def measure_with_tracker(fn: Callable[[], Any]) -> tuple[Any, dict]:
             measure_power_secs=1,
             log_level="error",
             save_to_file=False,
-            allow_multiple_runs=True,
         )
         tracker.start()
         result = fn()

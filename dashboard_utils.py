@@ -15,7 +15,7 @@ from config import ENERGY_RULE_ENGINE, ENERGY_SMALL_MODEL, ENERGY_LARGE_MODEL
 # ── Colour palette ─────────────────────────────────────────────────────────────
 STAGE_COLOURS = {
     "Rule Engine": "#22c55e",   # green
-    "DistilBERT":  "#3b82f6",   # blue
+    "RoBERTa":     "#3b82f6",   # blue
     "BERT":        "#f97316",   # orange
 }
 
@@ -42,7 +42,7 @@ def energy_bar_chart(current_stage: str | None = None) -> go.Figure:
     Horizontal bar chart comparing the three inference stages.
     Highlights *current_stage* with a brighter bar.
     """
-    stages  = ["Rule Engine", "DistilBERT", "BERT"]
+    stages  = ["Rule Engine", "RoBERTa", "BERT"]
     energies = [ENERGY_RULE_ENGINE, ENERGY_SMALL_MODEL, ENERGY_LARGE_MODEL]
     colours = [STAGE_COLOURS[s] for s in stages]
 
@@ -86,10 +86,10 @@ def energy_bar_chart(current_stage: str | None = None) -> go.Figure:
 def stage_distribution_pie(log_df: pd.DataFrame) -> go.Figure:
     """Pie chart of how often each stage was used across the session log."""
     if log_df.empty:
-        counts = {"Rule Engine": 0, "DistilBERT": 0, "BERT": 0}
+        counts = {"Rule Engine": 0, "RoBERTa": 0, "BERT": 0}
     else:
         counts = log_df["Stage"].value_counts().to_dict()
-        for s in ["Rule Engine", "DistilBERT", "BERT"]:
+        for s in ["Rule Engine", "RoBERTa", "BERT"]:
             counts.setdefault(s, 0)
 
     labels  = list(counts.keys())
@@ -137,13 +137,38 @@ def carbon_timeline(log_df: pd.DataFrame) -> go.Figure:
                 hovertemplate="Inference #%{x}<br>Cumulative CO₂: %{y:.4f} g<extra></extra>",
             )
         )
+        
+        # Adjust x-axis range based on number of inferences
+        num_inferences = len(df)
+        if num_inferences == 1:
+            # For single inference, show range 0-3
+            x_range = [0, 3]
+        elif num_inferences <= 3:
+            # For 2-3 inferences, show 0 to num+1
+            x_range = [0, num_inferences + 1]
+        else:
+            # For more inferences, auto-scale with padding
+            x_range = [0.5, num_inferences + 0.5]
+        
+        xaxis_config = dict(
+            title="Inference #", 
+            gridcolor=GRID_COLOUR, 
+            dtick=1,
+            range=x_range
+        )
     else:
         # Empty placeholder
         fig.add_trace(go.Scatter(x=[], y=[], mode="lines"))
+        xaxis_config = dict(
+            title="Inference #", 
+            gridcolor=GRID_COLOUR, 
+            dtick=1,
+            range=[0, 5]
+        )
 
     layout = _base_layout("🌍 Cumulative CO₂ Emissions This Session (grams)")
     layout.update(
-        xaxis=dict(title="Inference #", gridcolor=GRID_COLOUR, dtick=1),
+        xaxis=xaxis_config,
         yaxis=dict(title="CO₂ (g)", gridcolor=GRID_COLOUR),
         height=280,
     )

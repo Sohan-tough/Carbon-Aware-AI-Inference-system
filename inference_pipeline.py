@@ -5,7 +5,7 @@ Pipeline logic
 --------------
 Stage 1  Rule Engine    (near-zero energy)
          ↓ if ambiguous
-Stage 2  DistilBERT     (small model, ~38% of BERT energy)
+Stage 2  RoBERTa        (small model, ~38% of BERT energy)
          ↓ if confidence < 0.80
 Stage 3  BERT           (large model, full quality)
 
@@ -43,7 +43,7 @@ def run_pipeline(text: str) -> dict:
     dict
         label        – "POSITIVE" | "NEGATIVE"
         confidence   – float 0-1
-        stage        – "Rule Engine" | "DistilBERT" | "BERT"
+        stage        – "Rule Engine" | "RoBERTa" | "BERT"
         latency_ms   – wall-clock inference time in milliseconds
         energy_kwh   – estimated energy consumed
         co2_kg       – estimated CO₂ emissions
@@ -66,7 +66,7 @@ def run_pipeline(text: str) -> dict:
             **energy,
         }
 
-    # ── Stage 2: DistilBERT ───────────────────────────────────────────────────
+    # ── Stage 2: RoBERTa ──────────────────────────────────────────────────────
     def _run_small():
         return run_inference(SMALL_MODEL_NAME, text)
 
@@ -74,12 +74,12 @@ def run_pipeline(text: str) -> dict:
     small_result = {
         "label":      small_raw["label"],
         "confidence": small_raw["confidence"],
-        "stage":      "DistilBERT",
+        "stage":      "RoBERTa",
     }
 
     if small_result["confidence"] >= SMALL_MODEL_THRESHOLD:
         latency_ms = round((time.perf_counter() - t0) * 1000, 2)
-        energy = estimate_energy("DistilBERT")
+        energy = estimate_energy("RoBERTa")
         # If CodeCarbon measured real energy, prefer it
         if tracker_data.get("source") == "CodeCarbon":
             energy["energy_kwh"] = tracker_data["energy_kwh"]
