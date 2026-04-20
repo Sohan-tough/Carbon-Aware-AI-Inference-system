@@ -1,15 +1,18 @@
 # ── Core AI / NLP ─────────────────────────────────────────────────────────────
-transformers==4.40.1
-torch>=2.5.0+cpu                   # CPU-only version to save space
-tokenizers>=0.19.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+transformers>=4.48.0
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
+tokenizers>=0.21.0
 
 # ── Carbon tracking (optional — system degrades gracefully without it) ─────────
-codecarbon==2.4.1
+codecarbon>=2.4.1
 
 # ── Dashboard & visualisation ─────────────────────────────────────────────────
-streamlit==1.33.0
-plotly==5.21.0
+streamlit>=1.33.0
+plotly>=5.21.0
 pandas>=2.2.0
 
 # ── Utilities ─────────────────────────────────────────────────────────────────
 numpy>=1.26.0
+requests>=2.31.0
